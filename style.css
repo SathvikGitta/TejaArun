@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  font-weight: 500;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+/* Header */
+
+header {
+  width: 100vw;
+  height: 100px;
+  border-bottom: 1px solid #1c1c1d;
+}
+
+.navbar {
+  width: inherit;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.logo,
+.logo-redirect {
+  font-size: 24px;
+  color: black;
+  font-weight: 900;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.ul-list {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  display: flex;
+  gap: 15px;
+}
+
+.btn-cta {
+  border: none;
+  outline: none;
+  font-family: "Nunito", sans-serif;
+  background-color: #0045f6;
+  color: white;
+  padding: 16px 40px;
+  font-size: 16px;
+}
+
+/* section-cta */
+.section-1 {
+  height: 500px;
+  /* background-color: red; */
+  padding: 80px 25px;
+}
+
+.cta-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  text-align: center;
+  font-size: 72px;
+}
+
+.cta-subheading {
+  padding-top: 16px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  color: #005ae1;
+}
+
+.button-section {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
