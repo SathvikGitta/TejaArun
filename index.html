@@ -16,12 +16,16 @@
     <header>
         <nav class="navbar">
             <h1 class="navbar-logo">Teja Arun <span class="logo-bg"></span></h1>
-            <ul class="navbar-items">
-                <li><a href="#Services" class="navbar-items-list">Services</a></li>
-                <li><a href="#Work" class="navbar-items-list">Work</a></li>
-                <li><a href="#Contact" class="navbar-items-list navbar-contact-list">Contact</a></li>
-                <li><a href="#" class=" mobile-toggle">hamburger</a></li>
-            </ul>
+            <div class="navbar-flex-items">
+
+                <ul class="navbar-items navbar_mobile_toggle">
+                    <li><a href="#Services" class="navbar-items-list ">Services</a></li>
+                    <li><a href="#Work" class="navbar-items-list">Work</a></li>
+                    <li><a href="#Contact" class="navbar-items-list navbar-contact-list">Contact</a></li>
+                </ul>
+                <p><a href="#" class="mobile-toggle mobile-toggle-btn   ">hamburger</a></p>
+
+            </div>
         </nav>
 
         <!-- Section 01 -->
@@ -74,22 +78,43 @@
     <!-- Section Work -->
     <section class="section-work">
         <div class="section-work-items">
-            <h1>Work</h1>
-            <h3>Selective Work</h3>
+            <h1 class="section-work-heading">Work</h1>
+            <h3 class="section-work-subheading">Selective Work</h3>
             <ul class="section-work-flex">
                 <li class="section-work-flex-items">
-                    <a href="#Project-01">
-                        <img src="./images/mockup-01.jpg" alt="mockup-01" width="100%" height="490px">
+                    <a href="https://app.powerbi.com/groups/me/reports/ab766bba-0f7f-47cf-afc8-8a7c3c8d6135/ReportSection?ctid=8cfe623b-9b44-42db-9d76-3b05404ac20a"
+                        target="_blank">
+                        <img src="./images/mockup-01.jpg" alt="mockup-01" width="100%">
                     </a>
                     <h3>Sales Insight for Falcon Hardware</h3>
                 </li>
-                <li class="section-work-flex-items">2</li>
-                <li class="section-work-flex-items">3</li>
+                <li class="section-work-flex-items">
+                    <a href="https://drive.google.com/drive/folders/1vZgeScEytFVXddY3iUvm5sIR3FlnBnZS?usp=share_link"
+                        target="_blank">
+                        <img src="./images/Image-03.png" alt="mockup-02" width="95%">
+                    </a>
+                    <h3>Tree Graph-Stock Market Pivot Table </h3>
+                </li>
             </ul>
         </div>
     </section>
-
-
+    <!-- Section 04 -->
+    <!-- Form Submit -->
+    <section class="form-section">
+        <div class="form-section-flex">
+            <div class="form-section-text">
+                <h1 class="form-section-heading">Have Questions?</h1>
+                <p class="form-section-tagline">Request a call back from us.</p>
+            </div>
+            <div class="form-section-form">
+                <form action="https://formsubmit.co/sathvikgitta@gmail.com" method="POST">
+                    <input type="text" name="name" required />
+                    <input type="email" name="email" required />
+                    <button type="submit">Send</button>
+                </form> 
+            </div>
+        </div>
+    </section>
     <script src="./script.js"></script>
 </body>
 
