@@ -7,20 +7,40 @@ mobile_toggle.addEventListener("click", () => {
   navbarItems_list.classList.remove(navbar_mobile_toggle);
 });
 
-let btn_upwork_redirect = document.querySelector(".button-consultation");
+let btn_upwork_redirect = document.querySelector(".cta-button");
 btn_upwork_redirect.style.cursor = "pointer";
 
 btn_upwork_redirect.addEventListener("click", () => {
   window.open("https://www.upwork.com/freelancers/~0110b5735a167193bd");
 });
 
-// Form Submit Notification
-// let form = document.querySelector("form");
-let submitAfter = document.querySelector(".after-submit");
+// Copy Notification Button
 
-document.addEventListener("submit", (event) => {
-  event.preventDefault();
-  if (event.target.id == "form-id") {
-    submitAfter.textContent = "Submited Succesfull";
-  }
+let string_copy_email = "Copied Email";
+
+function notification_email(event) {
+  let notificationText = document.querySelector(".notification");
+  notificationText.innerHTML = string_copy_email;
+}
+
+document
+  .querySelector(".notification")
+  .addEventListener("click", notification_email);
+
+const copyText = document.querySelector(".copy-email");
+function copyClipboard() {
+  const textValue = copyText.innerHTML || copyText.textContent;
+
+  navigator.clipboard
+    .writeText(textValue)
+    .then(() => {
+      console.log("Copied Value");
+    })
+    .catch(() => {
+      console.log("Erroor");
+    });
+}
+
+copyText.addEventListener("click", () => {
+  copyClipboard();
 });

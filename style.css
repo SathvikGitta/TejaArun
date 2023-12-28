@@ -26,6 +26,11 @@ li {
   list-style: none;
 }
 
+button {
+  cursor: pointer;
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
 /* ********************************************** */
 /* navbar */
 header {
@@ -136,12 +141,14 @@ header {
   border: none;
   outline: none;
   display: block;
-  margin: 30px auto;
+  margin-top: 30px;
+  margin-inline: auto;
   border-radius: 999px;
   background-color: var(--highlight-bg);
   color: white;
   font-size: 18px;
   font-weight: 500;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 786px) {
@@ -301,68 +308,65 @@ header {
 }
 /* ********************************************** */
 /* Section 04 */
-.form-section {
-  margin-top: 48px;
-  min-height: 75vh;
+.section-contact {
   background-color: var(--Second-bg);
-  border-radius: 20px;
+  padding: 0px 24px;
+  min-height: 100%;
 }
-
-.form-section-flex {
+.section-contact-flex {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   justify-content: space-around;
 }
 
-.form-section-heading {
+.section-contact-banner-img {
+  width: 560px;
+  height: 480px;
+}
+
+.section-contact-form-details {
+  padding-top: 48px;
+}
+
+.section-contact-form-details > h1 {
   font-size: 36px;
   font-weight: 600;
   color: var(--highlight-bg);
 }
 
-.form-section-tagline {
+.section-contact-form-details > p {
   font-size: 14px;
-  font-weight: 400;
+  color: var(--grey-text);
+  margin-top: 8px;
+}
+.section-contact-form-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.cta-line {
+  display: block;
+  width: 250px;
+  height: 2px;
+  background-color: var(--grey-text);
 }
 
-.form-section-form {
-  margin-top: 40px;
-}
-input {
-  font-family: "Plus Jakarta Sans", sans-serif;
+.copy-email {
   outline: none;
-  width: 300px;
-  height: 32px;
-  margin-top: 10px;
-  border: 1px solid var(--grey-text);
-  border-radius: 4px;
-  padding-left: 4px;
-}
-
-input[type="email"]:invalid {
-  border-color: red;
-}
-
-textarea {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  padding: 2px;
-  outline: none;
-  border: 1px solid var(--grey-text);
-  border-radius: 4px;
-  resize: none;
-  margin-top: 10px;
-}
-
-.btn-submit {
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 500;
   border: none;
-  outline: none;
-  width: 200px;
-  height: 35px;
-  border-radius: 4px;
-  background-color: var(--black-text);
-  color: white;
+  background-color: #ccc;
+  display: block;
+  margin-inline: auto;
+  margin-top: 20px;
+  width: 240px;
+  height: 45px;
+  border-radius: 2px;
+  transform: scale(0.9);
+  transition: all 0.3s ease-out;
+}
+.copy-email:active {
+  transform: scale(1);
 }
 /* ********************************************** */
