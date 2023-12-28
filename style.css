@@ -82,24 +82,71 @@ header {
   color: white;
   transition: 0.2s ease-in-out;
 }
-.mobile-toggle {
+/* Mobile Togle  */
+
+.hamburger {
+  width: 35px;
+  height: 35px;
+  position: relative;
+  margin-left: auto;
   display: none;
 }
 
-/* Mobile Togle  */
+.hamburger span {
+  height: 3px;
+  width: 100%;
+  background-color: blue;
+  border-radius: 25px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease-in-out;
+}
+
+.hamburger span:nth-child(1) {
+  top: 25%;
+}
+
+.hamburger span:nth-child(3) {
+  top: 75%;
+}
+
+/* Dynamic Change in Mobile Toggle */
+.hamburger .active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.hamburger .active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger .active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
 
 @media screen and (max-width: 786px) {
+  .navbar {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .navbar-logo {
     font-size: 24px;
   }
-  .navbar-items-list {
-    display: none;
+  .navbar-flex-items {
+    position: relative;
+    top: 45%;
   }
-  .mobile-toggle {
-    display: block;
-  }
-  .navbar-contact-list {
-    border: none;
+
+  /* Mobile Toggle */
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
   }
 }
 

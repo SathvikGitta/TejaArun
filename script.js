@@ -9,6 +9,16 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   });
 });
 
+// Mobile Toggle
+
+const hamburger_menu = document.querySelector(".hamburger");
+const navbar_list = document.querySelector(".navbar-items");
+
+hamburger_menu.addEventListener("click", () => {
+  hamburger_menu.classList.toggle("active");
+  navbar_list.classList.toggle("active");
+});
+
 // Button Redirect
 
 let btn_upwork_redirect = document.querySelector(".cta-button");
