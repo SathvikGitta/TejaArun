@@ -36,7 +36,7 @@ button {
 header {
   min-height: 100%;
   height: 100vh;
-  background-color: var(--Third-bg);
+  background-color: white;
   padding: 0px 24px;
 }
 .navbar {
