@@ -15,6 +15,7 @@ const hamburger_menu = document.querySelector(".hamburger");
 const navbar_list = document.querySelector(".navbar-items");
 
 hamburger_menu.addEventListener("click", () => {
+  console.log("Hamburger menu Clicked");
   hamburger_menu.classList.toggle("active");
   navbar_list.classList.toggle("active");
 });
@@ -29,16 +30,7 @@ btn_upwork_redirect.addEventListener("click", () => {
 });
 
 // Copy Notification Email
-function notification_email(event) {
-  let notificationText = document.querySelector(".notification");
-  notificationText.innerHTML = string_copy_email;
-}
-
-document
-  .querySelector(".notification")
-  .addEventListener("click", notification_email);
-
-const copyText = document.querySelector(".copy-email");
+const copyText = document.querySelector(".emailCopyText");
 function copyClipboard() {
   const textValue = copyText.innerHTML || copyText.textContent;
 
@@ -67,3 +59,10 @@ copyText.addEventListener("click", () => {
     alert_text.style.opacity = 0;
   }, 1000);
 });
+
+// Copyright Year
+
+const Year = new Date().getFullYear();
+
+const Year_text = document.querySelector(".copyright-year");
+Year_text.textContent = Year;

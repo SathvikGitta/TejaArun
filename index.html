@@ -16,15 +16,18 @@
     <header>
         <nav class="navbar">
             <h1 class="navbar-logo">Teja Arun <span class="logo-bg"></span></h1>
-            <div class="navbar-flex-items">
 
-                <ul class="navbar-items ">
-                    <li><a href="#Services" class="navbar-items-list ">Services</a></li>
+            <div class="navbar-flex">
+                <ul class="navbar-items">
+                    <li><a href="#Services" class="navbar-items-list">Services</a></li>
                     <li><a href="#Work" class="navbar-items-list">Work</a></li>
                     <li><a href="#Contact" class="navbar-items-list navbar-contact-list">Contact</a></li>
                 </ul>
             </div>
 
+            <!-- .navbar-items -->
+            <!-- navbar-items-list  a tag -->
+            <!-- Services,Work,Contact -->
 
             <!-- Mobile Toggle -->
             <div class="hamburger">
@@ -120,8 +123,10 @@
                     <a href="https://www.upwork.com/freelancers/~0110b5735a167193bd" target="_blank">
                         <button class="cta-button-redirect-link">Start your free consultation today.</button>
                     </a>
-                    <button class="copy-email" title="copy email">bteja.arun@gmail.com</button>
-                    <span class="notification alert-text"></span>
+                    <div class="button-copy-flex">
+                        <button class="copy-email emailCopyText" title="copy email">bteja.arun@gmail.com</button>
+                        <span class="notification alert-text"></span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -132,26 +137,32 @@
     <footer>
         <section class="section-footer">
             <div class="section-footer-flex">
-                <div>
+                <div class="section-footer-logo-text">
                     <h1 class="navbar-logo">Teja Arun <span class="logo-bg"></span></h1>
-                    <p>Let's Connect.Say "Hi" if you want to say</p>
-                    <button class="copy-email" title="copy email">bteja.arun@gmail.com</button>
+                    <p>Contact me for freelance projects, or to just say hi</p>
                 </div>
-                <div>
+                <div class="section-footer-navlinks">
                     <h2>Say Hello !</h2>
                     <ul>
                         <li>
-                            <a href="#Linkedin">Linkedin</a>
+                            <a href="https://www.linkedin.com/in/tejaarun/" target="_blank">Linkedin</a>
                         </li>
                         <li>
-                            <a href="#Twitter">Twitter</a>
+                            <a href="https://twitter.com/B_TejaArun" target="_blank">Twitter</a>
+                        </li>
+                        <li>
+                            <a href="https://www.upwork.com/freelancers/~0110b5735a167193bd?p=1640402510961745920"
+                                target="_blank">Upwork</a>
                         </li>
                     </ul>
                 </div>
             </div>
+            <div class="copyright-section">
+                <h4>TejaArun &#169; <span class="copyright-year"></span></h4>
+            </div>
         </section>
     </footer>
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
 </body>
 
 </html>
